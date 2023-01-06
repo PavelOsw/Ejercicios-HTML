@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="assets/contacto.css">
+</head>
+
+<body>
+    <header>
+        <h1> Contáctanos </h1>
+    </header>
+    <main>
+        <section>
+            <form action="" method="post">
+                <fieldset>
+                    <legend> Datos básicos de contacto </legend>
+
+                    <label for="name">Nombre: </label>
+                    <input id="name" type="text" placeholder="Nombre" required>
+                    <br>
+                    <label for="last-name">Apellido Paterno: </label>
+                    <input id="last-name" type="text" placeholder="Apellido Paterno" required>
+                    <br>
+                    <label for="e-mail">Correo electrónico: </label>
+                    <input id="e-mail" type="email" placeholder="Correo electrónico" required>
+                    <br>
+                    <input type="button" value="Enviar">
+                </fieldset>
+
+                <fieldset>
+                    <legend> Datos del pedido </legend>
+
+                    <label for="cantidad-tamales">Cantidad de tamales: </label>
+                    <input id="cantidad-tamales" type="number" min="20" max="500" required>
+
+                    <label for="cantidad-tamales">Cantidad de litros de atole: </label>
+                    <input id="cantidad-tamales" type="number" min="20" max="500" required>
+
+                    <label for="date"> Fecha del evento: </label>
+                    <input id="date" type="date">
+
+                </fieldset>
+                <fieldset>
+                    <legend> Datos del envío </legend>
+                    <select name="stores1" id="stores1">
+                        <option value="Tlajomulco">Sucursal Tlajomulco</option>
+                        <option value="Tonala">Sucursal Tonalá</option>
+                        <option value="El Salto">Sucursal El Salto</option>
+                        <option value="Envío a domicilio">Envío a domicilio</option>
+                    </select>
+                    <br>
+                    <datalist>
+                        <option value="Tlaquepaque">Sucursal Tlaquepaque</option>
+                        <option value="Guadalajara">Sucursal Guadalajara</option>
+                        <option value="Zapopan">Surcursal Zapopan</option>
+                        <option value="Envío a domicilio">Envío a domicilio</option>
+                    </datalist>
+                    <br>
+                    <br>
+                        <input type="radio" name="type-delivery" id="delivery"> Recoger en la sucursal
+                        <input type="radio" name="type-delivery" id="order"> Enviar a domicilio
+                        <br>
+                        <br>
+                        <label for="verified"><input type="checkbox" id="verified"> He leído los términos y condiciones</label>
+                        <br>
+                        <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
