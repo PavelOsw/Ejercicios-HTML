@@ -1,0 +1,25 @@
+@font-face{
+    font-family: Minecraft;
+    src: url(../font/Minecraft.ttf);
+}
+h1, h3{
+    font-family: 'Minecraft';
+}
+
+.headings{
+    background-color: chartreuse;
+    display: grid;
+    place-items: center;
+    width: 1000px;
+}
+
+.lists{
+    background-color: aquamarine;
+    place-items: center;
+    width: 1000px;
+}
+
+.things{
+    background-color: darkslategrey;
+    color: white;
+}
